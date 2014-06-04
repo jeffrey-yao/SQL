@@ -61,6 +61,7 @@ begin
 end
 go
 
+-- set this SP to auto start
 if exists (select * from sys.procedures where name='uspRestartAlert')
 	exec sp_procoption @ProcName='dbo.uspRestartAlert', @OptionName='startup', @OptionValue='on';
 go
