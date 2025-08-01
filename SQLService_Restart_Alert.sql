@@ -7,7 +7,7 @@ It is applicable to sql server 2005 and above version only.
 
 Assumption: The database mail is already configured and workable on the sql server instance.
 */
-
+-- this is test
 use master
 if object_id('dbo.uspRestartAlert', 'P') is not null
 	drop proc dbo.uspRestartInfo;
